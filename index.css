@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    background: #fefefe;
+    font-family: 'Smythe', cursive;
+    box-sizing: border-box;
+} 
+
+h1{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 0;
+    /* border: 1px solid orange; */
+    
+}
+.header-title, .header-subtitle{
+    color: white;
+    text-align: right;
+    padding: 10 10px 0 5px;
+    text-shadow: 0px 0px 4px black;
+    font-weight: 400;
+}
+
+.item-name, .item-ingredients, .item-price{
+    margin-bottom: 10px;
+}
+
+.item-name{
+    font-size: 28px;
+    align-self: center;
+}
+
+.remove-btn{
+    margin-bottom: 5px;
+}
+
+.item-ingredients{
+    color:#8B8B8B;
+}
+
+.item-price{
+    font-size: 20px;
+}
+
+header{
+    background-image: url("/images/pizza-header2.png");
+    background-size: cover;
+    width: 600px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+}
+
+main{
+    width: 510px;
+    margin: 0 auto;
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 25px 0 25px 0;
+}
+
+.descriptions{
+    margin-left: 10px;
+}
+
+.pic{
+    max-width: 100%;
+}
+
+/* .add-item{
+    margin-left: auto;
+    border: 2px solid #DEDEDE;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+} */
+
+.modal{
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 525px;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 60px 2px #666;
+    background-color: white;
+    color: #212529;
+}
+
+.modal-title{
+    font-size: 24px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    box-sizing: border-box;
+    margin-top: 20px; 
+    background: whitesmoke;
+    border: 1px solid #757575;
+    padding: 20px 10px;
+    width: 100%;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .confirm-btn,.pay-btn{
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    color: white;
+    background: #16DB99;
+    border:none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .confirm-btn{
+    display: none;
+    font-size: 16px;
+
+  }
+  .pay-btn{
+    font-size: 20px;
+  }
+
+  .close-modal-btn-container{
+    text-align: right;
+    margin:5px 5px 0 0;
+  }
+
+  .modal-close-btn{
+    font-size: 25px;
+    margin: 10px;
+    border: none;
+    background:none;
+    cursor: pointer;
+    color: #212529;
+  }
+
+  .modal-close-btn:hover{
+    color: darkred;
+  }
+
+  button{
+    border: none;
+    background: none;
+  }
+
+  .add-btn{
+    color: #212529;
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border: 3px solid #DEDEDE;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+
+  .disabled{
+    color:#DEDEDE;
+  }
+
+  .name-and-remove-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid purple; */
+  }
+
+.modal-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    height: 420px;
+}
+
+.order-title{
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.items-added{
+    display: flex;
+    justify-content: space-between
+}
+
+.remove-btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.order-title, .item-name, .total-price{
+    font-size: 28px;
+}
+
+
+.items-list, .total-price{
+    margin-right:20px;
+}
+
+.total-price{
+    border-top: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.item-price{
+    margin-top: 10px;
+}
+
+.order-message{
+    width: 500px;
+    padding: 25px 0 25px 0;
+    margin: 0 auto;
+    margin-top: 40px;
+    background: #ECFDF5;
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+.message-paragraph{
+    color: #065F46;
+}
+
+@media only screen and (max-width: 500px){
+    .add-item, .add-btn{
+        margin-right: 15px;
+    }
+    .header-title, .header-subtitle{
+        margin-right: 100px;
+    }
+    .items-list, .total-price{
+        margin-right:35px;
+    }
+}
